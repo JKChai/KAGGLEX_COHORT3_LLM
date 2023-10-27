@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 langchain = "*"
+streamlit = "*"
+ctransformers = "*"
+chromadb = "*"
 
 [dev-packages]
 
