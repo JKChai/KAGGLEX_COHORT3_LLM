@@ -32,8 +32,5 @@ def app():
         st.write("Answer:")
         st.write(answer)
 
-
-    
-  
 if __name__ == "__main__":
     app()   
