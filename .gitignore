@@ -1,7 +1,3 @@
-## Ignore Pipfile
-## Please use Pipfile.lock for installation
-Pipfile
-
 ## Ignore data folder
 ## Data can be located from https://www.kaggle.com/datasets/tsaustin/us-historical-stock-prices-with-earnings-data
 /data
