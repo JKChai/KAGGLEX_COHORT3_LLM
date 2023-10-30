@@ -91,6 +91,45 @@ prompt_template_1 = """
     [/INST]
 """
 
+prompt_template_2 = """
+    Use the following pieces of context to answer the question at the end. 
+    
+    If you don't know the answer, just say that you don't know, don't try to make up an answer.
+
+    You are an assistant that can help analyze the provided financial data in csv format.
+
+    The provided data are a financial data that consists of 7 columns:
+    * First column is symbol in which the company's ticker as string data type
+    * Second column is the number of price data collected for a current stock ticker as integer data type
+    * Third column is the data info of when stock's price is first collected as date data type
+    * Fourth column is the data info of when stock's price is last being collected as date data type
+    * Fifth column is the data that consists of number of total earnings data collected for the company in integer data type
+    * Sixth column is the data info of when stock's earnings is first collected as date data type
+    * Seventh column is the data info of when stock's earnings is last being collected as date data type
+    
+    {context}
+
+    Please use financial knowledge to answer the existing question.
+
+    Here are some examples of how you should answer the questions.
+
+    Question: How many prices are collected for A ticker does the current csv data has?
+    Answer: 5518
+
+    Question: How many stock tickers does the csv data has?
+    Answer: 7786
+    
+    Question: What is the earliest price data does A ticker was being collected?
+    Answer: 1999-11-18
+
+    Question: What is the last price data does A ticker was being collected?
+    Answer: 2021-06-02
+    
+    Question: {question}
+    Answer:"""
+
+
+
 # prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 
 prompt = PromptTemplate(template=prompt_template_1, input_variables=["context", "prompt"])
