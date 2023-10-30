@@ -3,7 +3,7 @@
 
 <br />
 <div align="center">
-  <h1 align="center">KAGGLEX COHORT3 - Built My Own ChatBot Assistant</h1>
+  <h1 align="center">KAGGLEX COHORT3 - Build My Own ChatBot Assistant</h1>
   <p align="center">
     Project built & presented for KAGGLEX COHORT 3 PROGRAM
   </p>
@@ -31,11 +31,44 @@
 
 ### Prerequisites
 
-Uses [![Streamlit][streamLit-shield]][streamlit-url] & [![LLAMA2][llama2-shield]][llama2-url] & [![LangChain][langchain-shield]][langchain-url]
+* [![Streamlit][streamLit-shield]][streamlit-url] 
+* [![LLAMA2][llama2-shield]][llama2-url] & 
+* [![LangChain][langchain-shield]][langchain-url]
+
+Note that I uses [`pipenv`](https://pypi.org/project/pipenv/) for Package Management instead of `pip`. 
+
+To install [pipenv](https://docs.pipenv.org/basics/), run the below command.
+
+```pwsh
+C:\Users\<USERNAME>> Python -m pip install pipenv
+``` 
+
+After `pipenv` is installed, run the command below from the repo directory.
+This command will install all packages listed in `Pipfile`.
+Note that all required packages are listed in `Pipfile` & required versions for these packages are listed in `Pipfile.lock`
+
+```pwsh
+C:\Users\<USERNAME>\repo\KAGGLEX3_LLM> pipenv install
+``` 
+
+You can check if `pipenv` is installed by running this command.
+
+```pwsh
+C:\Users\<USERNAME>\repo\KAGGLEX3_LLM> pip list pipenv
+``` 
+
+If you decided not to use `pipenv`, you might have to install all packages manually using `pip`.
 
 ## Usage
 
-> Working In-Progress
+To run the script, run the below command.
+
+```pwsh
+C:\Users\<USERNAME>\repo\KAGGLEX3_LLM> pipenv run streamlit run .\app.py
+```
+
+
+
 
 ## Roadmap
 
@@ -49,7 +82,7 @@ Uses [![Streamlit][streamLit-shield]][streamlit-url] & [![LLAMA2][llama2-shield]
 - [x] Refine the Chat Application for better accuracy 
 - [x] Organize documentation & all works for PPT presentation
 - [x] Complete Markdown
-- [ ] Upload scripts & docs to GitHub
+- [ ] Upload scripts & docs to GitHub & make it Public
 - [ ] Submit PPT presentation & 5 Mins video
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -76,6 +109,7 @@ Tool's documentation is listed below:
 * https://docs.trychroma.com
 * https://faiss.ai/index.html
 * https://docs.pandas-ai.com/en/latest/
+* https://huggingface.co/sentence-transformers
 * https://pypi.org/project/InstructorEmbedding/
 
 Some important references on `langchain` & `langchain_experimental` modules:
