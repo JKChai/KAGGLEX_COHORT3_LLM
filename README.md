@@ -134,7 +134,7 @@ Other references:
 * https://dev.to/ngonidzashe/chat-with-your-csv-visualize-your-data-with-langchain-and-streamlit-ej7
 * https://realpython.com/practical-prompt-engineering/
 * https://github.com/othneildrew/Best-README-Template
-
+* https://gist.github.com/rxaviers/7360908
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
