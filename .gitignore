@@ -1,3 +1,4 @@
-## Ignore data folder
+## Ignore folders in data folder
 ## Data can be located from https://www.kaggle.com/datasets/tsaustin/us-historical-stock-prices-with-earnings-data
-/data
+/data/**/
+/temp
