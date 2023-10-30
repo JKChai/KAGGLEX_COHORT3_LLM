@@ -78,7 +78,7 @@ To run the script, run the below command.
 C:\Users\USERNAME\repo\KAGGLEX3_LLM> pipenv run streamlit run .\app.py
 ```
 
-Note that ```python llm()``` function created in `app.py` required an integer `type` parameter input, this input is listed as below.
+Note that `llm()` function created in `app.py` required an integer `type` parameter input, this input is listed as below.
 
 ```python
 {
@@ -130,8 +130,48 @@ Each model will required a package download to `C:\Users\USERNAME\.cache\hugging
 | llama-2-13b-chat.Q6_K.gguf   | Q6_K   | 6 | 10.68 GB | 13.18 GB |
 | llama-2-13b-chat.Q8_0.gguf   | Q8_0   | 8 | 13.83 GB | 16.33 GB |
 
+There are 3 types of embedding function provided in `app.py` & the one that has been performing better & faster is the `sentence-transformers` model, thus, the type has been default to `0`.
 
+```python
+def embedding_model(type=0):
+    """Measure of relatedness of text strings
 
+    Args:
+        type (int, optional): 
+            Type of given Embedding Models. 
+            Defaults to 0.
+
+    Returns:
+        Embedding: An Embedding model Object type
+    """
+
+    model_kwargs = {'device': 'cpu'}
+
+    if type == 0:
+        model_name = 'sentence-transformers/all-MiniLM-L6-v2'
+        embeddings = HuggingFaceEmbeddings(
+                model_name=model_name,
+                model_kwargs=model_kwargs
+                )
+
+    elif type == 1:
+        model_name = "BAAI/bge-small-en"
+        encode_kwargs = {'normalize_embeddings': True}
+        embeddings = HuggingFaceBgeEmbeddings(
+            model_name=model_name,
+            model_kwargs=model_kwargs,
+            encode_kwargs=encode_kwargs
+        )
+
+    elif type == 2:
+        model_name = "hkunlp/instructor-xl"
+        embeddings = HuggingFaceInstructEmbeddings(
+            model_name=model_name, 
+            model_kwargs=model_kwargs
+            )
+
+    return embeddings
+```
 
 ## Roadmap
 
