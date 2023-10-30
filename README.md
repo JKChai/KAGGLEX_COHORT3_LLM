@@ -120,7 +120,7 @@ Note that ```python llm()``` function created in `app.py` required an integer `t
 Each model will required a package download to `C:\Users\USERNAME\.cache\huggingface` & the size of each model is listed as below.
 
 | NAME | Quant Method | Bits | Size | MAX RAM REQUIRED |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | llama-2-7b-chat.Q4_K_M.gguf	| Q4_K_M | 4 | 4.08 GB | 6.58 GB |
 | llama-2-7b-chat.Q5_K_M.gguf	Q5_K_M | 5 | 4.78 GB | 7.28 GB |
 | llama-2-7b-chat.Q6_K.gguf	Q6_K | 6 | 5.53 GB | 8.03 GB |
