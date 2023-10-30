@@ -21,27 +21,21 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#references">References</a></li>
 </ol>
 
 ## README
 
 > Working In-Progress
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Prerequisites
 
 Uses [![Streamlit][streamLit-shield]][streamlit-url] & [![LLAMA2][llama2-shield]][llama2-url] & [![LangChain][langchain-shield]][langchain-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Usage
 
 > Working In-Progress
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap
 
@@ -63,8 +57,6 @@ Uses [![Streamlit][streamLit-shield]][streamlit-url] & [![LLAMA2][llama2-shield]
 ## License
 
 > Not-Available for now
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
 
