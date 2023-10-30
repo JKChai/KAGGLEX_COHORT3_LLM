@@ -20,7 +20,6 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#references">References</a></li>
 </ol>
@@ -86,10 +85,6 @@ C:\Users\<USERNAME>\repo\KAGGLEX3_LLM> pipenv run streamlit run .\app.py
 - [ ] Submit PPT presentation & 5 Mins video
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## License
-
-> Not-Available for now
 
 ## Acknowledgments
 
