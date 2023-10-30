@@ -26,20 +26,32 @@
 
 ## README
 
-> Working In-Progress
+This is a learning project built for KaggleX - Cohort 3 program. The goal for this project is to learn to build my own Kaggle project, in this case, a "chatbot". Although I was not able to completely run it on Kaggle Notebook, however, Kaggle has been one of the important resources for me to research & learn & collect the data I need for this project.
+
+This "chatbot" should be able to run on personal pc as it utilizes Quantization technique & uses LLAMA2, an open-source model, without requiring extra dollars to run the "chatbot".
+
+Users who has less than 36GB RAM should run the model with 7b-llama model as 13-b model can consume the RAM significantly using chat history process.
+
+Note that the "chatbot" is still limited and has not able to complete the tasks that I am expecting it to complete such as providing financial information based on the given financial data, providing financial advice based on the user portfolio, etc.
+
+Any developers can try to improve & extend this project by:
+
+* Putting more effort on Prompt Engineering
+* Training the model to learn on a domain only task for precisions
+* Help make `create_pandas_dataframe_agent` & `csvloader` better by contributing to the source code
 
 ### Prerequisites
 
-* [![Streamlit][streamLit-shield]][streamlit-url] 
-* [![LLAMA2][llama2-shield]][llama2-url] & 
+* [![LLAMA2][llama2-shield]][llama2-url]
 * [![LangChain][langchain-shield]][langchain-url]
+* [![Streamlit][streamLit-shield]][streamlit-url] 
 
 Note that I uses [`pipenv`](https://pypi.org/project/pipenv/) for Package Management instead of `pip`. 
 
 To install [pipenv](https://docs.pipenv.org/basics/), run the below command.
 
 ```pwsh
-C:\Users\<USERNAME>> Python -m pip install pipenv
+C:\Users\USERNAME> Python -m pip install pipenv
 ``` 
 
 After `pipenv` is installed, run the command below from the repo directory.
@@ -47,13 +59,13 @@ This command will install all packages listed in `Pipfile`.
 Note that all required packages are listed in `Pipfile` & required versions for these packages are listed in `Pipfile.lock`
 
 ```pwsh
-C:\Users\<USERNAME>\repo\KAGGLEX3_LLM> pipenv install
+C:\Users\USERNAME\repo\KAGGLEX3_LLM> pipenv install
 ``` 
 
 You can check if `pipenv` is installed by running this command.
 
 ```pwsh
-C:\Users\<USERNAME>\repo\KAGGLEX3_LLM> pip list pipenv
+C:\Users\USERNAME\repo\KAGGLEX3_LLM> pip list pipenv
 ``` 
 
 If you decided not to use `pipenv`, you might have to install all packages manually using `pip`.
@@ -63,8 +75,60 @@ If you decided not to use `pipenv`, you might have to install all packages manua
 To run the script, run the below command.
 
 ```pwsh
-C:\Users\<USERNAME>\repo\KAGGLEX3_LLM> pipenv run streamlit run .\app.py
+C:\Users\USERNAME\repo\KAGGLEX3_LLM> pipenv run streamlit run .\app.py
 ```
+
+Note that ```python llm()``` function created in `app.py` required an integer `type` parameter input, this input is listed as below.
+
+```python
+{
+  0:{
+      "model":"TheBloke/Llama-2-7B-Chat-GGUF", 
+      "model_file":"llama-2-7b-chat.Q4_K_M.gguf"
+  },
+  1:{
+      "model":"TheBloke/Llama-2-7B-Chat-GGUF", 
+      "model_file":"llama-2-7b-chat.Q5_K_M.gguf"
+  },
+  2:{
+      "model":"TheBloke/Llama-2-7B-Chat-GGUF", 
+      "model_file":"llama-2-7b-chat.Q6_K.gguf"
+  },
+  3:{
+      "model":"TheBloke/Llama-2-7B-Chat-GGUF", 
+      "model_file":"llama-2-7b-chat.Q8_0.gguf"
+  },
+  4:{
+      "model":"TheBloke/Llama-2-13B-Chat-GGUF", 
+      "model_file":"llama-2-13b-chat.Q4_K_M.gguf"
+  },
+  5:{
+      "model":"TheBloke/Llama-2-13B-Chat-GGUF", 
+      "model_file":"llama-2-13b-chat.Q5_K_M.gguf"
+  },
+  6:{
+      "model":"TheBloke/Llama-2-13B-Chat-GGUF", 
+      "model_file":"llama-2-13b-chat.Q6_K.gguf"
+  },
+  7:{
+      "model":"TheBloke/Llama-2-13B-Chat-GGUF", 
+      "model_file":"llama-2-13b-chat.Q8_0.gguf"
+  }
+}
+```
+
+Each model will required a package download to `C:\Users\USERNAME\.cache\huggingface` & the size of each model is listed as below.
+
+| NAME | Quant Method | Bits | Size | MAX RAM REQUIRED |
+|---|---|---|---|---|---|
+| llama-2-7b-chat.Q4_K_M.gguf	| Q4_K_M | 4 | 4.08 GB | 6.58 GB |
+| llama-2-7b-chat.Q5_K_M.gguf	Q5_K_M | 5 | 4.78 GB | 7.28 GB |
+| llama-2-7b-chat.Q6_K.gguf	Q6_K | 6 | 5.53 GB | 8.03 GB |
+| llama-2-7b-chat.Q8_0.gguf	Q8_0 | 8 | 7.16 GB | 9.66 GB |
+| llama-2-13b-chat.Q4_K_M.gguf | Q4_K_M | 4 | 7.87 GB | 10.37 GB |
+| llama-2-13b-chat.Q5_K_M.gguf | Q5_K_M | 5 | 9.23 GB | 11.47 GB |
+| llama-2-13b-chat.Q6_K.gguf | Q6_K | 6 | 10.68 GB | 13.18 GB |
+| llama-2-13b-chat.Q8_0.gguf | Q8_0 | 8 | 13.83 GB |16.33 GB |
 
 
 
