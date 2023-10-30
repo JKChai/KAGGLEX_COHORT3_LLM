@@ -76,6 +76,7 @@ Tool's documentation is listed below:
 * https://docs.trychroma.com
 * https://faiss.ai/index.html
 * https://docs.pandas-ai.com/en/latest/
+* https://pypi.org/project/InstructorEmbedding/
 
 Some important references on `langchain` & `langchain_experimental` modules:
 
