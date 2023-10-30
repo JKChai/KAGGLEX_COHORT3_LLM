@@ -121,14 +121,14 @@ Each model will required a package download to `C:\Users\USERNAME\.cache\hugging
 
 | NAME | Quant Method | Bits | Size | MAX RAM REQUIRED |
 | --- | --- | --- | --- | --- | --- |
-| llama-2-7b-chat.Q4_K_M.gguf	| Q4_K_M | 4 | 4.08 GB | 6.58 GB |
-| llama-2-7b-chat.Q5_K_M.gguf	Q5_K_M | 5 | 4.78 GB | 7.28 GB |
-| llama-2-7b-chat.Q6_K.gguf	Q6_K | 6 | 5.53 GB | 8.03 GB |
-| llama-2-7b-chat.Q8_0.gguf	Q8_0 | 8 | 7.16 GB | 9.66 GB |
-| llama-2-13b-chat.Q4_K_M.gguf | Q4_K_M | 4 | 7.87 GB | 10.37 GB |
-| llama-2-13b-chat.Q5_K_M.gguf | Q5_K_M | 5 | 9.23 GB | 11.47 GB |
-| llama-2-13b-chat.Q6_K.gguf | Q6_K | 6 | 10.68 GB | 13.18 GB |
-| llama-2-13b-chat.Q8_0.gguf | Q8_0 | 8 | 13.83 GB |16.33 GB |
+| llama-2-7b-chat.Q4_K_M.gguf	 | Q4_K_M | 4 | 4.08 GB  | 6.58 GB |
+| llama-2-7b-chat.Q5_K_M.gguf  | Q5_K_M | 5 | 4.78 GB  | 7.28 GB |
+| llama-2-7b-chat.Q6_K.gguf    | Q6_K   | 6 | 5.53 GB  | 8.03 GB |
+| llama-2-7b-chat.Q8_0.gguf    | Q8_0   | 8 | 7.16 GB  | 9.66 GB |
+| llama-2-13b-chat.Q4_K_M.gguf | Q4_K_M | 4 | 7.87 GB  | 10.37 GB |
+| llama-2-13b-chat.Q5_K_M.gguf | Q5_K_M | 5 | 9.23 GB  | 11.47 GB |
+| llama-2-13b-chat.Q6_K.gguf   | Q6_K   | 6 | 10.68 GB | 13.18 GB |
+| llama-2-13b-chat.Q8_0.gguf   | Q8_0   | 8 | 13.83 GB | 16.33 GB |
 
 
 
