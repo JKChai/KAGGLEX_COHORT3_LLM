@@ -26,18 +26,18 @@
 
 ## README
 
-This is a learning project built for KaggleX - Cohort 3 BIPOC Mentorship program. The goal for this project is to learn to build my own Kaggle project, in this case, a "chatbot". Although I was not able to completely run it on Kaggle Notebook, however, Kaggle has been one of the important resources for me to research & learn & collect the data I need for this project.
+This is a learning project built for `KaggleX - Cohort 3 BIPOC Mentorship program`. The goal for this project is to learn & to build my own Kaggle project, a "chatbot" assistant. Although I was not able to completely run the code on Kaggle Notebook, however, Kaggle has been one of the most important resources for me to research & learn.
 
-This "chatbot" should be able to run on personal pc as it utilizes Quantization technique & uses LLAMA2, an open-source model, without requiring extra dollars to run the "chatbot".
+This "chatbot" should be able to run on personal pc as it utilizes K-Quantization technique & uses LLAMA2, an open-source model, without requiring extra dollars to run.
 
-Users who has less than 36GB RAM should run the model with 7b-llama model as 13b model might require more RAM when using chat history in the retrieval process.
+Users who has less than 36GB RAM should run the model with 7b-llama model as 13b model might require more RAM when running with chat history in the retrieval process.
 
 Note that this "chatbot" is still limited and has not able to complete the full tasks that I am expecting it to complete such as providing financial information based on the given financial data, providing financial advice based on the user portfolio, etc.
 
-Any developers can try to improve & extend this project by:
+Therefore, any developers can try to improve & extend this project by:
 
 * Putting more effort on Prompt Engineering
-* Training the model to learn on a domain only task for precisions
+* Training the model to learn on a domain specific task for better accuracy
 * Help make `create_pandas_dataframe_agent` & `csvloader` better by contributing to the source code
 
 ### Prerequisites
@@ -185,14 +185,14 @@ def embedding_model(type=0):
 - [x] Refine the Chat Application for better accuracy 
 - [x] Organize documentation & all works for PPT presentation
 - [x] Complete Markdown
-- [ ] Upload scripts & docs to GitHub & make it Public
-- [ ] Submit PPT presentation & 5 Mins video
+- [x] Upload scripts & docs to GitHub & make it Public
+- [x] Submit PPT presentation & 5 Mins video
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
 
-I would like to thank all of KaggleX's staff & presenters from `Cohort 3 of the KaggleX BIPOC Mentorship Program` for taking your time & effort to make this happen :blush:. I would also like to thank my Mentor `Emmanuel Mayssat` for sharing project ideas & advice providing me a good headstart to explore & research about Prompt Engineering building my own Chat Assistant that can run on my CPU machine :grin:. Thank you to KaggleX Discord Community as well for sharing ideas & advice. Because of all of you, these 3 months journey have been challenging but fruitful providing me a different opportunity to learn & explore new & different ways of manipulating & handling data. :joy:
+I would like to thank all of KaggleX's staff & presenters from `Cohort 3 of the KaggleX BIPOC Mentorship Program` for taking your time & effort to make this happen :blush:. I would also like to thank my Mentor `Emmanuel Mayssat` for sharing project ideas & advice providing me a good headstart to explore & to research about possibility to build my own Chat Assistant that can run on my CPU machine & new exploration to Prompt Engineering :grin:. Thank you to KaggleX Discord Community as well for sharing ideas & advice. Because of all of you, these 3 months have been a challenging but fruitful adventure providing me a different opportunity to learn & to explore new & different ways of analyzing & manipulating & handling data. :joy:
 
 Thank you all & all the best! :satisfied:
 
