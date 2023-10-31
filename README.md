@@ -3,7 +3,7 @@
 
 <br />
 <div align="center">
-  <h1 align="center">KAGGLEX COHORT3 - Build My Own ChatBot Assistant</h1>
+  <h1 align="center">KAGGLEX COHORT3 - Build CPU OSS ChatBot Assistant</h1>
   <p align="center">
     Project built & presented for KAGGLEX COHORT 3 PROGRAM
   </p>
@@ -26,13 +26,13 @@
 
 ## README
 
-This is a learning project built for KaggleX - Cohort 3 program. The goal for this project is to learn to build my own Kaggle project, in this case, a "chatbot". Although I was not able to completely run it on Kaggle Notebook, however, Kaggle has been one of the important resources for me to research & learn & collect the data I need for this project.
+This is a learning project built for KaggleX - Cohort 3 BIPOC Mentorship program. The goal for this project is to learn to build my own Kaggle project, in this case, a "chatbot". Although I was not able to completely run it on Kaggle Notebook, however, Kaggle has been one of the important resources for me to research & learn & collect the data I need for this project.
 
 This "chatbot" should be able to run on personal pc as it utilizes Quantization technique & uses LLAMA2, an open-source model, without requiring extra dollars to run the "chatbot".
 
-Users who has less than 36GB RAM should run the model with 7b-llama model as 13-b model can consume the RAM significantly using chat history process.
+Users who has less than 36GB RAM should run the model with 7b-llama model as 13b model might require more RAM when using chat history in the retrieval process.
 
-Note that the "chatbot" is still limited and has not able to complete the tasks that I am expecting it to complete such as providing financial information based on the given financial data, providing financial advice based on the user portfolio, etc.
+Note that this "chatbot" is still limited and has not able to complete the full tasks that I am expecting it to complete such as providing financial information based on the given financial data, providing financial advice based on the user portfolio, etc.
 
 Any developers can try to improve & extend this project by:
 
