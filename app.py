@@ -159,7 +159,7 @@ def main():
             st.session_state['history'] = []
 
         if 'generated' not in st.session_state:
-            st.session_state['generated'] = ["Hello User! Try asking me anything about " + _import_file.name]
+            st.session_state['generated'] = ["Hello! Try asking me anything about " + _import_file.name]
 
         if 'past' not in st.session_state:
             st.session_state['past'] = ["Hello ChatBot!"]
@@ -185,7 +185,7 @@ def main():
         db.save_local(_vsdb_path)
 
         ## Load model & initiate Chain
-        llm = load_llm(type=5)
+        llm = load_llm(type=7)
         chain = ConversationalRetrievalChain.from_llm(llm=llm, retriever=db.as_retriever())
 
         with _user_container:
